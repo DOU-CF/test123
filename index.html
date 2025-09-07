@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>寶轉站 | B.B Station</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* 自訂 CSS */
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background-color: #f9f9f9;
+    }
+    .hero {
+      background: url('hero-bg.jpg') no-repeat center/cover;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      color: #4A90E2;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .category-btn {
+      border: 1px solid #d9ecff;
+      border-radius: 12px;
+      background-color: #f0f8ff;
+      padding: 15px;
+      transition: 0.3s;
+    }
+    .category-btn:hover {
+      background-color: #d6edff;
+    }
+    .product-card img {
+      border-radius: 10px;
+    }
+    .train-section {
+      background: #f0f8ff;
+      padding: 40px 0;
+    }
+    .train-card {
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- 導覽列 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="#">B.B Station</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">首頁</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">分類</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">愛心轉送</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">關於我們</a></li>
+        <li class="nav-item"><a class="btn btn-primary ms-2" href="#">登入</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero 區塊 -->
+<section class="hero">
+  <div class="container">
+    <h1>我們的寶物，快樂再出發！</h1>
+    <p class="text-muted">寶寶長大了，讓二手物品陪伴更多家庭。</p>
+    <div class="input-group mt-4 w-50 mx-auto">
+      <input type="text" class="form-control" placeholder="搜尋商品...">
+      <button class="btn btn-primary">搜尋</button>
+    </div>
+  </div>
+</section>
+
+<!-- 熱門分類 -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">熱門分類</h2>
+    <div class="row g-3">
+      <div class="col-6 col-md-3">
+        <div class="category-btn">嬰兒服飾</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="category-btn">玩具</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="category-btn">外出用品</div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="category-btn">媽媽用品</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 愛心轉送 -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="mb-4">愛心轉送</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="p-4 bg-white rounded shadow-sm">我要捐贈</div></div>
+      <div class="col-md-4"><div class="p-4 bg-white rounded shadow-sm">我要索取</div></div>
+      <div class="col-md-4"><div class="p-4 bg-white rounded shadow-sm">公益合作</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 熱門商品 -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="mb-4 text-center">熱門商品</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card product-card shadow-sm">
+          <img src="product1.jpg" class="card-img-top" alt="推車">
+          <div class="card-body">
+            <h5 class="card-title">嬰兒推車</h5>
+            <p class="text-primary">NT$ 1,200</p>
+          </div>
+        </div>
+      </div>
+      <!-- 其他商品卡片重複結構 -->
+    </div>
+  </div>
+</section>
+
+<!-- 列車推薦 -->
+<section class="train-section">
+  <div class="container">
+    <h2 class="text-center mb-5">精選推薦</h2>
+    <div class="row g-3">
+      <div class="col-md-3">
+        <div class="train-card">小王子故事書</div>
+      </div>
+      <div class="col-md-3">
+        <div class="train-card">嬰兒床</div>
+      </div>
+      <div class="col-md-3">
+        <div class="train-card">奶瓶消毒鍋</div>
+      </div>
+      <div class="col-md-3">
+        <div class="train-card">益智玩具</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 育兒資訊 -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">育兒資訊</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="info1.jpg" class="card-img-top" alt="文章">
+          <div class="card-body">
+            <h5 class="card-title">新手爸媽必讀</h5>
+            <p class="card-text text-muted">照顧寶寶的 10 個小技巧</p>
+          </div>
+        </div>
+      </div>
+      <!-- 其他文章卡片 -->
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
